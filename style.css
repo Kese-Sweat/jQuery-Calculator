@@ -1,0 +1,47 @@
+#calculator{
+
+    display: flex;
+    justify-content: center;
+}
+
+.numOne{
+
+    height: 50px;
+}
+
+
+.numTwo{
+
+    height: 50px;
+}
+
+.answer{
+
+    height: 50px;
+}
+
+.myButtons{
+
+    display: flex;
+    justify-content: center;
+}
+
+.buttonOne{
+
+    background-color: green;
+}
+
+.buttonTwo{
+
+    background-color: red;
+}
+
+.buttonThree{
+
+    background-color: blue;
+}
+
+.buttonFour{
+
+    background-color: yellow;
+}
