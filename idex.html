@@ -28,31 +28,40 @@
         
 
 
+         <!--DECIDED TO DO A MORE ADVANCED calculator-->
+
+
         <div id="calculatorTwo">
             <table>
                 <tr>
                     <td colspan="4">
-            <input  class="calcDisplay" type="text" value="" disabled>
+            <input  id="result" type="text" value="" >
                     </td>
                 </tr>
 
         <tr>
             <td colspan="4">
-            
-                <input class="number" type="button" value="1">
-                <input class="number" type="button" value="2">
-                <input class='number' type="button" value="3">
-                <input class="plus" type="button" value="+">
+
+    
+                <!-- COULDN'T GET THE VALUE TO DISPLAY IN JAVASCRIPT.
+                    DISCOVERED ONLINE THAT I CAN USE "ONCLICK=DIS('')" TO CALL A FUNCTION THAT WILL DISPLAY VALUE
+                
+                
+                -->
+                <input class="number" type="button" onclick="dis('1')" value="1">
+                <input class="number" type="button" onclick="dis('2')"value="2">
+                <input class='number' type="button" onclick="dis('3')" value="3">
+                <input class="math" type="button" onclick="dis('+')"value="+">
            
             </td>
         </tr>
         <tr>
             <td colspan="4">
             <div class="rowTwo">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="-">
+                <input class="number" type="button" onclick="dis('4')" value="4">
+                <input class="number" type="button" onclick="dis('5')" value="5">
+                <input class="number" type="button" onclick="dis('6')" value="6">
+                <input class="math" type="button" onclick="dis('-')" value="-">
             </div>
             </td>
         </tr>
@@ -60,29 +69,34 @@
         <tr>
             <td colspan="4">
             <div class="rowThree">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="x">
+                <input class="number" type="button" onclick="dis('7')" value="7">
+                <input class="number" type="button" onclick="dis('8')" value="8">
+                <input class="number" type="button" onclick="dis('9')" value="9">
+                <input class="math" type="button" onclick="dis('*')" value="x">
             </div>
             </tr>
 
             <tr>
             <td colspan="4">
             <div class="rowFour">
-                <input type="button" value="c">
-                <input type="button" value="0">
-                <input class = "calculate" type="button" value="=">
-                <input type="button" value="/">
+                <input type="button" onclick="clr()" value="c">
+                <input class="number" type="button" onclick="dis('0')" value="0">
+                <input onclick="solve()" type="button" value="=">
+                <input class="math" type="button"  onclick="dis('/')" value="/">
+                
             </div>
             </td>
             </tr>
 
+            <!--"SOLVE" AND "CLR" WILL SOLVE AND CLEAR VALUES-->
 
 
+            <!-- FOUND AN ALTERNATIVE WAY TO WRITE A CODE FOR JQUERY CALCULATOR.
+            YOU PROBALY WON'T APPROVE OF ME CODING IT LIKE THIS BUT IT'S THE ONLY I WAS ABLE TO GET THE CALCULATOR TO FUNCTION.
+        
+            PLEASE EXCUSE THE UNNECESSARY CLASS SELECTORS-->
 
-
-
+                
 
 
 
@@ -95,7 +109,8 @@
 
 
 
-   
+  
+
 
 
 
