@@ -46,19 +46,17 @@ $('.buttonTwo').click(function (){
 
 
 
+//I was having difficulties trying to add function to buttons. Found out that i was writing the code wrong in JS.
 
 
 
 
 
 
-//Having difficulties trying to add function to button. Found out that i was writing the code wrong in JS
 
+//CALCULATOR 2
 
-
-
-
-// CREATED A FUNCTION THAT WILL DISPLAY VALUE
+// CREATED A FUNCTION THAT WILL DISPLAY A VALUE
 
 function dis(val) 
 { 
@@ -67,9 +65,9 @@ function dis(val)
 
 function solve()
 { 
-    let x = document.getElementById("result").value 
-    let y = eval(x) 
-    document.getElementById("result").value = y 
+    let a = document.getElementById("result").value 
+    let b = eval(a) 
+    document.getElementById("result").value = b
     // WILL RETURN RESULTS
 } 
 
